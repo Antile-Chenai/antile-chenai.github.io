@@ -9,9 +9,10 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f8fb;
     color: #333;
   }
+
   header {
     background-color: #004080;
     color: #fff;
@@ -37,7 +38,7 @@
     display: inline-block;
     padding: 0.5rem 1rem;
     margin-top: 0.5rem;
-    background-color: #ff9900;
+    background-color: #0073e6;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -48,13 +49,11 @@
     margin: 2rem auto;
     padding: 0 1rem;
   }
-  section {
-    margin-bottom: 2rem;
-  }
   section h2 {
     color: #004080;
     border-bottom: 2px solid #004080;
     padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
   }
   .projects {
     display: grid;
@@ -66,6 +65,7 @@
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
   }
   .project-card h3 {
     margin: 0 0 0.5rem 0;
@@ -73,11 +73,24 @@
     color: #004080;
   }
   .project-card p {
-    margin: 0.3rem 0;
+    margin: 0.3rem 0 0.8rem 0;
     font-size: 0.95rem;
   }
-  .project-card a {
-    color: #ff9900;
+  .project-card a.btn {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .project-card a.btn:hover {
+    background-color: #005bb5;
+  }
+  a.email-link {
+    color: #0073e6;
     text-decoration: none;
     font-weight: bold;
   }
@@ -93,7 +106,7 @@
 <header>
   <img src="profile.jpg" alt="Antile Chenai Kaba">
   <h1>Antile Chenai Kaba</h1>
-  <p>Bayonne, NJ | <a href="https://www.linkedin.com/in/antile-kaba-61421a205" style="color:#ffcc66;">LinkedIn</a> | antilekaba22@gmail.com</p>
+  <p>Bayonne, NJ | <a href="mailto:antilekaba22@gmail.com" class="email-link">antilekaba22@gmail.com</a> | <a href="https://www.linkedin.com/in/antile-kaba-61421a205" style="color:#ffcc66;">LinkedIn</a></p>
   <a href="resume.pdf" target="_blank" class="resume-btn">View Resume</a>
 </header>
 
@@ -101,49 +114,57 @@
   <section>
     <h2>About Me</h2>
     <p>
-      I am a Data Analytics and Supply Chain professional with experience in Python, SQL, Tableau, Power BI, and Google Cloud. 
-      Skilled in building data pipelines, dashboards, and statistical models to support business decisions. 
-      Passionate about transforming raw data into actionable insights for enterprises.
+      I am a Data Analytics and Supply Chain professional with expertise in Python, SQL, Tableau, Power BI, and Google Cloud. 
+      I build data pipelines, dashboards, and statistical models to support business decisions and transform raw data into actionable insights.
     </p>
   </section>
 
   <section>
     <h2>Projects</h2>
     <div class="projects">
+
       <div class="project-card">
-        <h3><a href="https://github.com/Antile-Chenai/global-supply-chain-analytics" target="_blank">Global Supply Chain Analytics</a></h3>
+        <h3>Global Supply Chain Analytics</h3>
         <p>Implemented ETL pipelines and data visualization solutions to improve operational efficiency and reporting accuracy.</p>
+        <a href="https://github.com/Antile-Chenai/global-supply-chain-analytics" target="_blank" class="btn">View on GitHub</a>
       </div>
 
       <div class="project-card">
-        <h3><a href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank">Airbnb Market Analysis</a></h3>
+        <h3>Airbnb Market Analysis</h3>
         <p>Analyzed 20,000+ NYC Airbnb listings using Python to uncover pricing and occupancy trends for investors.</p>
+        <a href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank" class="btn">View on GitHub</a>
       </div>
 
       <div class="project-card">
-        <h3><a href="https://github.com/Antile-Chenai/business-analytics-dashboard" target="_blank">Business Analytics Dashboard</a></h3>
+        <h3>Business Analytics Dashboard</h3>
         <p>Developed interactive dashboards in Tableau/Power BI to monitor KPIs and drive data-informed decisions.</p>
+        <a href="https://github.com/Antile-Chenai/business-analytics-dashboard" target="_blank" class="btn">View on GitHub</a>
       </div>
 
       <div class="project-card">
-        <h3><a href="https://github.com/Antile-Chenai/dbt-bigquery-warehouse" target="_blank">DBT BigQuery Warehouse</a></h3>
+        <h3>DBT BigQuery Warehouse</h3>
         <p>Built a modular data warehouse with dbt and BigQuery for reliable, scalable analytics across multiple teams.</p>
+        <a href="https://github.com/Antile-Chenai/dbt-bigquery-warehouse" target="_blank" class="btn">View on GitHub</a>
       </div>
 
       <div class="project-card">
-        <h3><a href="https://github.com/Antile-Chenai/customer-churn-prediction" target="_blank">Customer Churn Prediction</a></h3>
+        <h3>Customer Churn Prediction</h3>
         <p>Applied Python and ML techniques to predict customer churn and inform retention strategies.</p>
+        <a href="https://github.com/Antile-Chenai/customer-churn-prediction" target="_blank" class="btn">View on GitHub</a>
       </div>
 
       <div class="project-card">
-        <h3><a href="https://github.com/Antile-Chenai/data-visualization-portfolio" target="_blank">Data Visualization Portfolio</a></h3>
-        <p>Created clear and impactful visualizations with Python libraries to communicate data insights effectively.</p>
+        <h3>Data Visualization Portfolio</h3>
+        <p>Created impactful visualizations with Python libraries to communicate insights effectively.</p>
+        <a href="https://github.com/Antile-Chenai/data-visualization-portfolio" target="_blank" class="btn">View on GitHub</a>
       </div>
 
       <div class="project-card">
-        <h3><a href="https://github.com/Antile-Chenai/ml-dashboard-project" target="_blank">ML Dashboard Project</a></h3>
+        <h3>ML Dashboard Project</h3>
         <p>Designed a machine learning project dashboard integrating Python analyses and interactive plots.</p>
+        <a href="https://github.com/Antile-Chenai/ml-dashboard-project" target="_blank" class="btn">View on GitHub</a>
       </div>
+
     </div>
   </section>
 </main>
