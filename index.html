@@ -4,142 +4,72 @@
 <meta charset="UTF-8">
 <title>Antile Chenai Kaba - Portfolio</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f8fc;
-    color: #1a1a1a;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-color: #1e3a8a;
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-  }
-  header img {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border: 3px solid white;
-  }
-  h1, h2 {
-    margin: 10px 0;
-  }
-  .contact a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .container {
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
-  }
-  section {
-    margin-bottom: 40px;
-  }
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  .project-card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    flex: 1 1 calc(50% - 15px);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  .project-card h3 {
-    margin-top: 0;
-  }
-  .project-card a.button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background-color: #1e3a8a;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  @media (max-width: 600px) {
-    .project-card {
-      flex: 1 1 100%;
-    }
-  }
+  body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #222; margin: 0; padding: 0;}
+  header { background-color: #0d6efd; color: white; padding: 2rem; text-align: center;}
+  h1 { margin: 0; }
+  .contact a { color: white; text-decoration: underline; }
+  section { padding: 2rem; }
+  .projects { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .project-card { background-color: white; border-radius: 8px; padding: 1rem; flex: 1 1 calc(33% - 2rem); box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+  .project-card a { text-decoration: none; color: #0d6efd; font-weight: bold; }
+  .project-card p { margin: 0.5rem 0 0; }
+  footer { text-align: center; padding: 1rem; background-color: #0d6efd; color: white; }
 </style>
 </head>
 <body>
 
 <header>
-  <img src="profile.jpg" alt="Antile Chenai Kaba">
   <h1>Antile Chenai Kaba</h1>
-  <div class="contact">
-    <a href="mailto:antilekaba22@gmail.com">antilekaba22@gmail.com</a> | 
-    <a href="https://www.linkedin.com/in/antile-kaba-61421a205" target="_blank">LinkedIn</a> | 
-    <a href="resume.pdf" target="_blank">View Resume</a>
-  </div>
+  <p class="contact"><a href="mailto:antilekaba22@gmail.com">antilekaba22@gmail.com</a> | <a href="https://www.linkedin.com/in/antile-kaba-61421a205" target="_blank">LinkedIn</a></p>
 </header>
-
-<div class="container">
 
 <section>
   <h2>About Me</h2>
-  <p>Master’s student in Information Systems & Data Analytics at CUNY Baruch, with experience in data engineering, business analysis, and supply chain logistics. Skilled in Python, SQL, Tableau, Power BI, and cloud-based data solutions. Passionate about turning data into actionable insights for businesses.</p>
+  <p>M.S. in Information Systems and Data Analytics, CUNY Baruch. Passionate about data analysis, supply chain, and business intelligence. Experienced in Python, SQL, Tableau, Power BI, dbt, and Google Cloud Platform.</p>
+</section>
+
+<section>
+  <h2>Resume</h2>
+  <p><a href="resume.pdf" target="_blank">View Resume</a></p>
 </section>
 
 <section>
   <h2>Projects</h2>
   <div class="projects">
     <div class="project-card">
-      <h3>Airbnb Market Analysis</h3>
-      <p>Analyzed 20,000+ NYC Airbnb listings to identify pricing and occupancy trends. Visualized insights using Python libraries to guide rental strategy decisions.</p>
-      <a class="button" href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank">View on GitHub</a>
+      <a href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank">Airbnb Market Analysis</a>
+      <p>Analyzed 20,000+ NYC Airbnb listings to identify pricing and occupancy trends. Python, Pandas, Matplotlib.</p>
     </div>
-
     <div class="project-card">
-      <h3>Global Supply Chain Analytics</h3>
-      <p>Built modular dbt models and deployed a BigQuery-based warehouse to improve analytics workflows and data accessibility for multiple teams.</p>
-      <a class="button" href="https://github.com/Antile-Chenai/global-supply-chain-analytics" target="_blank">View on GitHub</a>
+      <a href="https://github.com/Antile-Chenai/global-supply-chain-analytics" target="_blank">Global Supply Chain Analytics</a>
+      <p>Developed a BigQuery warehouse with dbt models and automated ETL pipelines for scalable analytics.</p>
     </div>
-
     <div class="project-card">
-      <h3>Business Analytics Dashboard</h3>
-      <p>Interactive dashboards using Tableau and Power BI to visualize key business metrics and streamline executive decision-making.</p>
-      <a class="button" href="https://github.com/Antile-Chenai/business-analytics-dashboard" target="_blank">View on GitHub</a>
+      <a href="https://github.com/Antile-Chenai/business-analytics-dashboard" target="_blank">Business Analytics Dashboard</a>
+      <p>Interactive dashboards using Power BI/Tableau for executive decision-making and KPI tracking.</p>
     </div>
-
     <div class="project-card">
-      <h3>dbt BigQuery Warehouse</h3>
-      <p>Designed a data warehouse with dbt and BigQuery, including data quality tests and lineage documentation for scalable analytics solutions.</p>
-      <a class="button" href="https://github.com/Antile-Chenai/dbt-bigquery-warehouse" target="_blank">View on GitHub</a>
+      <a href="https://github.com/Antile-Chenai/dbt-bigquery-warehouse" target="_blank">DBT BigQuery Warehouse</a>
+      <p>Modular dbt data warehouse models in BigQuery with documented lineage and data quality tests.</p>
     </div>
-
     <div class="project-card">
-      <h3>Customer Churn Prediction</h3>
-      <p>Machine learning model to predict customer churn using Python, enabling proactive retention strategies for business growth.</p>
-      <a class="button" href="https://github.com/Antile-Chenai/customer-churn-prediction" target="_blank">View on GitHub</a>
+      <a href="https://github.com/Antile-Chenai/customer-churn-prediction" target="_blank">Customer Churn Prediction</a>
+      <p>Machine learning project predicting churn using Python and Jupyter Notebooks.</p>
     </div>
-
     <div class="project-card">
-      <h3>Data Visualization Portfolio</h3>
-      <p>Created visualizations in Python to explore and communicate insights from datasets, improving understanding of complex data patterns.</p>
-      <a class="button" href="https://github.com/Antile-Chenai/data-visualization-portfolio" target="_blank">View on GitHub</a>
+      <a href="https://github.com/Antile-Chenai/data-visualization-portfolio" target="_blank">Data Visualization Portfolio</a>
+      <p>Visualized complex datasets using Python libraries for actionable insights.</p>
     </div>
-
     <div class="project-card">
-      <h3>ML Dashboard Project</h3>
-      <p>Developed a Jupyter Notebook project integrating machine learning workflows and visualizations to analyze dataset patterns effectively.</p>
-      <a class="button" href="https://github.com/Antile-Chenai/ml-dashboard-project" target="_blank">View on GitHub</a>
+      <a href="https://github.com/Antile-Chenai/ml-dashboard-project" target="_blank">ML Dashboard Project</a>
+      <p>Jupyter Notebook project demonstrating end-to-end machine learning workflow.</p>
     </div>
-
   </div>
 </section>
 
-</div>
+<footer>
+  &copy; 2025 Antile Chenai Kaba
+</footer>
 
 </body>
 </html>
