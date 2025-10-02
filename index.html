@@ -3,171 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Antile Chenai Kaba Portfolio</title>
+<title>Antile Chenai Kaba - Portfolio</title>
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f8fb;
-    color: #333;
-  }
-
-  header {
-    background-color: #004080;
-    color: #fff;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-  header img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff;
-  }
-  header h1 {
-    margin: 0.5rem 0 0.2rem 0;
-    font-size: 2rem;
-  }
-  header p {
-    margin: 0.2rem 0 0.5rem 0;
-    font-size: 1rem;
-  }
-  header a.resume-btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
-    background-color: #0073e6;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  section h2 {
-    color: #004080;
-    border-bottom: 2px solid #004080;
-    padding-bottom: 0.3rem;
-    margin-bottom: 1rem;
-  }
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .project-card {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  .project-card h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
-    color: #004080;
-  }
-  .project-card p {
-    margin: 0.3rem 0 0.8rem 0;
-    font-size: 0.95rem;
-  }
-  .project-card a.btn {
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    background-color: #0073e6;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  .project-card a.btn:hover {
-    background-color: #005bb5;
-  }
-  a.email-link {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  @media (min-width: 600px) {
-    .projects {
-      grid-template-columns: 1fr 1fr;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f8ff;
+        color: #1a1a1a;
     }
-  }
+    header {
+        background-color: #0077cc;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 4px solid white;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    header p {
+        margin: 5px 0;
+        font-size: 1.1em;
+    }
+    section {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    section h2 {
+        color: #0077cc;
+        border-bottom: 2px solid #0077cc;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .about pre {
+        background-color: #e0f0ff;
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .project-card {
+        background-color: white;
+        border: 2px solid #0077cc;
+        border-radius: 8px;
+        padding: 20px;
+        width: 100%;
+        max-width: 280px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .project-card h3 {
+        margin-top: 0;
+        color: #0077cc;
+    }
+    .project-card p {
+        font-size: 0.95em;
+    }
+    .project-card a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        background-color: #0077cc;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+    }
+    .project-card a:hover {
+        background-color: #005fa3;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #0077cc;
+        color: white;
+        margin-top: 40px;
+    }
+    footer a {
+        color: white;
+        text-decoration: underline;
+    }
 </style>
 </head>
 <body>
 
 <header>
-  <img src="profile.jpg" alt="Antile Chenai Kaba">
-  <h1>Antile Chenai Kaba</h1>
-  <p>Bayonne, NJ | <a href="mailto:antilekaba22@gmail.com" class="email-link">antilekaba22@gmail.com</a> | <a href="https://www.linkedin.com/in/antile-kaba-61421a205" style="color:#ffcc66;">LinkedIn</a></p>
-  <a href="resume.pdf" target="_blank" class="resume-btn">View Resume</a>
+    <img src="profile.jpg" alt="Antile Chenai Kaba">
+    <h1>Antile Chenai Kaba</h1>
+    <p><a href="mailto:antilekaba22@gmail.com" style="color:white;">antilekaba22@gmail.com</a> | <a href="https://www.linkedin.com/in/antile-kaba-61421a205" target="_blank" style="color:white;">LinkedIn</a></p>
+    <p><a href="resume.pdf" target="_blank" style="color:white; text-decoration: underline;">View Resume</a></p>
 </header>
 
-<main>
-  <section>
+<section class="about">
     <h2>About Me</h2>
-    <p>
-      I am a Data Analytics and Supply Chain professional with expertise in Python, SQL, Tableau, Power BI, and Google Cloud. 
-      I build data pipelines, dashboards, and statistical models to support business decisions and transform raw data into actionable insights.
-    </p>
-  </section>
+    <pre>
+M.S. in Information Systems and Data Analytics at CUNY Baruch (GPA 3.58)
+B.Com. in Logistics, Supply Chain Management, and Marketing from Curtin University (GPA 3.3)
 
-  <section>
+Data Engineering & Analytics experience with tools: Python, SQL, dbt, BigQuery, Tableau, Power BI
+</pre>
+</section>
+
+<section class="projects">
     <h2>Projects</h2>
     <div class="projects">
+        <div class="project-card">
+            <h3>Airbnb Market Analysis</h3>
+            <p>Analyzed 20,000+ Airbnb listings in NYC to identify pricing and occupancy trends. Visualized insights using Python libraries.</p>
+            <a href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank">View on GitHub</a>
+        </div>
 
-      <div class="project-card">
-        <h3>Global Supply Chain Analytics</h3>
-        <p>Implemented ETL pipelines and data visualization solutions to improve operational efficiency and reporting accuracy.</p>
-        <a href="https://github.com/Antile-Chenai/global-supply-chain-analytics" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="project-card">
+            <h3>Global Supply Chain Analytics</h3>
+            <p>Created dashboards and analytics workflows to optimize supply chain processes. Utilized SQL, dbt, and Tableau for insights.</p>
+            <a href="https://github.com/Antile-Chenai/global-supply-chain-analytics" target="_blank">View on GitHub</a>
+        </div>
 
-      <div class="project-card">
-        <h3>Airbnb Market Analysis</h3>
-        <p>Analyzed 20,000+ NYC Airbnb listings using Python to uncover pricing and occupancy trends for investors.</p>
-        <a href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="project-card">
+            <h3>Business Analytics Dashboard</h3>
+            <p>Interactive dashboard using Power BI/Tableau to visualize key business KPIs and trends for decision making.</p>
+            <a href="https://github.com/Antile-Chenai/business-analytics-dashboard" target="_blank">View on GitHub</a>
+        </div>
 
-      <div class="project-card">
-        <h3>Business Analytics Dashboard</h3>
-        <p>Developed interactive dashboards in Tableau/Power BI to monitor KPIs and drive data-informed decisions.</p>
-        <a href="https://github.com/Antile-Chenai/business-analytics-dashboard" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="project-card">
+            <h3>Customer Churn Prediction</h3>
+            <p>Machine learning project predicting customer churn using Python. Built models to identify high-risk clients.</p>
+            <a href="https://github.com/Antile-Chenai/customer-churn-prediction" target="_blank">View on GitHub</a>
+        </div>
 
-      <div class="project-card">
-        <h3>DBT BigQuery Warehouse</h3>
-        <p>Built a modular data warehouse with dbt and BigQuery for reliable, scalable analytics across multiple teams.</p>
-        <a href="https://github.com/Antile-Chenai/dbt-bigquery-warehouse" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="project-card">
+            <h3>Data Visualization Portfolio</h3>
+            <p>Various data visualization projects using Python to showcase insights from datasets in an interactive and clear manner.</p>
+            <a href="https://github.com/Antile-Chenai/data-visualization-portfolio" target="_blank">View on GitHub</a>
+        </div>
 
-      <div class="project-card">
-        <h3>Customer Churn Prediction</h3>
-        <p>Applied Python and ML techniques to predict customer churn and inform retention strategies.</p>
-        <a href="https://github.com/Antile-Chenai/customer-churn-prediction" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="project-card">
+            <h3>ML Dashboard Project</h3>
+            <p>Jupyter Notebook project showcasing machine learning workflows and visualizations for data-driven insights.</p>
+            <a href="https://github.com/Antile-Chenai/ml-dashboard-project" target="_blank">View on GitHub</a>
+        </div>
 
-      <div class="project-card">
-        <h3>Data Visualization Portfolio</h3>
-        <p>Created impactful visualizations with Python libraries to communicate insights effectively.</p>
-        <a href="https://github.com/Antile-Chenai/data-visualization-portfolio" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="project-card">
+            <h3>DBT BigQuery Warehouse</h3>
+            <p>Data warehouse project using dbt and BigQuery. Designed modular models and data quality tests for production-ready pipelines.</p>
+            <a href="https://github.com/Antile-Chenai/dbt-bigquery-warehouse" target="_blank">View on GitHub</a>
+        </div>
 
-      <div class="project-card">
-        <h3>ML Dashboard Project</h3>
-        <p>Designed a machine learning project dashboard integrating Python analyses and interactive plots.</p>
-        <a href="https://github.com/Antile-Chenai/ml-dashboard-project" target="_blank" class="btn">View on GitHub</a>
-      </div>
-
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>This personal portfolio website showcasing projects, resume, and professional profile.</p>
+            <a href="https://github.com/Antile-Chenai/portfolio" target="_blank">View on GitHub</a>
+        </div>
     </div>
-  </section>
-</main>
+</section>
+
+<footer>
+    &copy; 2025 Antile Chenai Kaba | <a href="mailto:antilekaba22@gmail.com">Email Me</a>
+</footer>
 
 </body>
 </html>
