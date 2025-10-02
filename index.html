@@ -4,31 +4,63 @@
 <meta charset="UTF-8">
 <title>Antile Chenai Kaba - Portfolio</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 20px; }
-h1, h2 { color: #2c3e50; }
-.projects { list-style-type: none; padding: 0; }
-.projects li { margin: 10px 0; }
+  body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; padding: 20px; line-height: 1.6; }
+  h1, h2 { color: #333; }
+  img { border-radius: 50%; width: 150px; }
+  ul { list-style: none; padding: 0; }
+  li { margin-bottom: 10px; }
+  a { text-decoration: none; color: #1a0dab; }
+  a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
-<h1>Antile Chenai Kaba</h1>
-<p>Data Engineer | Analyst | Logistics Specialist</p>
-<img src="profile.jpg" alt="Profile Picture" width="150" style="border-radius:50%;"><br><p>Email: <a href="mailto:antilekaba22@gmail.com">antilekaba22@gmail.com</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/antile-kaba-61421a205">Antile Kaba</a></p>
 
+<!-- Profile Section -->
+<h1>Antile Chenai Kaba</h1>
+<img src="profile.jpg" alt="Profile Picture">
+<p>Email: <a href="mailto:antilekaba22@gmail.com">antilekaba22@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/antile-kaba-61421a205" target="_blank">View Profile</a></p>
+
+<!-- About Me -->
+<h2>About Me</h2>
+<pre>
+Data & Analytics professional with experience in ETL, BigQuery, Tableau, Python, and Data Warehousing.
+M.S. in Information Systems & Data Analytics (CUNY Baruch) | B.Com. in Logistics & Supply Chain (Curtin University)
+Passionate about building data pipelines, dashboards, and actionable insights for business decision-making.
+</pre>
+
+<!-- Projects Section -->
 <h2>Projects</h2>
-<ul class="projects">
-<li><a href="projects/airbnb-data-analysis">Airbnb Data Analysis</a></li>
-<li><a href="projects/global-supply-chain-analytics">Global Supply Chain Analytics</a></li>
-<li><a href="projects/business-analytics-dashboard">Business Analytics Dashboard</a></li>
-<li><a href="projects/customer-churn-prediction">Customer Churn Prediction</a></li>
-<li><a href="projects/data-visualization-portfolio">Data Visualization Portfolio</a></li>
-<li><a href="projects/dbt-bigquery-warehouse">DBT BigQuery Warehouse</a></li>
-<li><a href="projects/knowledge-game">Knowledge Game</a></li>
-<li><a href="projects/ml-dashboard-project">ML Dashboard Project</a></li>
+<ul id="projects-list">
+<!-- Project links will be populated dynamically -->
 </ul>
 
-<h2>Resume</h2>
-<p>Download my resume: <a href="about.md" target="_blank">Antile Chenai Kaba - Resume</a></p>
+<script>
+  // Automatically list projects from the projects folder
+  const projectsFolder = "projects"; // folder containing all repos
+  const projectsList = document.getElementById("projects-list");
+
+  // List of project names (replace with your actual folder names if needed)
+  const projectNames = [
+    "airbnb-data-analysis",
+    "global-supply-chain-analytics",
+    "knowledge-game",
+    "voip_analyzer",
+    "data-visualization-portfolio",
+    "dbt-bigquery-warehouse",
+    "ml-dashboard-project",
+    "secure-hospital-system"
+  ];
+
+  projectNames.forEach(name => {
+    const li = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = `${projectsFolder}/${name}/`; // link to each project folder
+    link.textContent = name.replace(/-/g, " "); // optional formatting
+    li.appendChild(link);
+    projectsList.appendChild(li);
+  });
+</script>
+
 </body>
 </html>
