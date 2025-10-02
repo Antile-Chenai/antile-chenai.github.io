@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Antile Chenai Kaba | Portfolio</title>
+<title>Antile Chenai Kaba Portfolio</title>
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
   }
   header {
-    background-color: #1f2937;
-    color: white;
-    padding: 30px 20px;
+    background-color: #004080;
+    color: #fff;
+    padding: 2rem 1rem;
     text-align: center;
   }
   header img {
@@ -23,55 +23,68 @@
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+    border: 3px solid #fff;
   }
   header h1 {
-    margin: 10px 0 5px;
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 2rem;
   }
   header p {
-    margin: 5px 0;
-    font-size: 16px;
+    margin: 0.2rem 0 0.5rem 0;
+    font-size: 1rem;
+  }
+  header a.resume-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
   }
   main {
     max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
+    margin: 2rem auto;
+    padding: 0 1rem;
   }
   section {
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
   }
-  h2 {
-    color: #111827;
-    border-bottom: 2px solid #3b82f6;
-    padding-bottom: 5px;
+  section h2 {
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 0.3rem;
   }
-  ul {
-    list-style: none;
-    padding: 0;
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  li.project {
-    background: white;
-    margin-bottom: 15px;
-    padding: 15px;
+  .project-card {
+    background-color: #fff;
+    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
   }
-  li.project a {
+  .project-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #004080;
+  }
+  .project-card p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+  }
+  .project-card a {
+    color: #ff9900;
+    text-decoration: none;
     font-weight: bold;
-    color: #3b82f6;
-    text-decoration: none;
   }
-  li.project p {
-    margin: 5px 0 0 0;
-  }
-  .resume-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    background-color: #3b82f6;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+  @media (min-width: 600px) {
+    .projects {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 </style>
 </head>
@@ -80,42 +93,60 @@
 <header>
   <img src="profile.jpg" alt="Antile Chenai Kaba">
   <h1>Antile Chenai Kaba</h1>
-  <p><a href="https://www.linkedin.com/in/antile-kaba-61421a205" style="color:#3b82f6;">LinkedIn</a></p>
-  <a class="resume-button" href="resume.pdf" target="_blank">View Resume</a>
+  <p>Bayonne, NJ | <a href="https://www.linkedin.com/in/antile-kaba-61421a205" style="color:#ffcc66;">LinkedIn</a> | antilekaba22@gmail.com</p>
+  <a href="resume.pdf" target="_blank" class="resume-btn">View Resume</a>
 </header>
 
 <main>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a Data Analytics and Supply Chain professional with experience in Python, SQL, Tableau, Power BI, and Google Cloud. 
+      Skilled in building data pipelines, dashboards, and statistical models to support business decisions. 
+      Passionate about transforming raw data into actionable insights for enterprises.
+    </p>
+  </section>
 
-<section>
-  <h2>About Me</h2>
-  <p>I am a Data Analytics and Supply Chain professional with experience in ETL, data visualization, and Python-based analytics. I specialize in creating actionable insights through dashboards, exploratory data analysis, and automated workflows.</p>
-</section>
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://github.com/Antile-Chenai/global-supply-chain-analytics" target="_blank">Global Supply Chain Analytics</a></h3>
+        <p>Implemented ETL pipelines and data visualization solutions to improve operational efficiency and reporting accuracy.</p>
+      </div>
 
-<section>
-  <h2>Projects</h2>
-  <ul>
-    <!-- GitHub Public Repo -->
-    <li class="project">
-      <a href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank">Airbnb Data Analysis</a>
-      <p>Python analysis of 20,000+ NYC Airbnb listings to uncover pricing, occupancy, and profitability trends. Includes data cleaning, visualization with Pandas & Matplotlib, and recommendations for investors.</p>
-    </li>
+      <div class="project-card">
+        <h3><a href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank">Airbnb Market Analysis</a></h3>
+        <p>Analyzed 20,000+ NYC Airbnb listings using Python to uncover pricing and occupancy trends for investors.</p>
+      </div>
 
-    <!-- Local Projects from portfolio/projects -->
-    <li class="project">
-      <a href="#">Global Supply Chain Analytics</a>
-      <p>Designed ETL pipelines and data visualizations using dbt and BigQuery to streamline supply chain reporting. Optimized workflows for better accuracy and efficiency.</p>
-    </li>
+      <div class="project-card">
+        <h3><a href="https://github.com/Antile-Chenai/business-analytics-dashboard" target="_blank">Business Analytics Dashboard</a></h3>
+        <p>Developed interactive dashboards in Tableau/Power BI to monitor KPIs and drive data-informed decisions.</p>
+      </div>
 
-    <!-- Add more local projects below in the same format -->
-    <!-- Example:
-    <li class="project">
-      <a href="#">Project Name</a>
-      <p>Project description goes here...</p>
-    </li>
-    -->
-  </ul>
-</section>
+      <div class="project-card">
+        <h3><a href="https://github.com/Antile-Chenai/dbt-bigquery-warehouse" target="_blank">DBT BigQuery Warehouse</a></h3>
+        <p>Built a modular data warehouse with dbt and BigQuery for reliable, scalable analytics across multiple teams.</p>
+      </div>
 
+      <div class="project-card">
+        <h3><a href="https://github.com/Antile-Chenai/customer-churn-prediction" target="_blank">Customer Churn Prediction</a></h3>
+        <p>Applied Python and ML techniques to predict customer churn and inform retention strategies.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="https://github.com/Antile-Chenai/data-visualization-portfolio" target="_blank">Data Visualization Portfolio</a></h3>
+        <p>Created clear and impactful visualizations with Python libraries to communicate data insights effectively.</p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href="https://github.com/Antile-Chenai/ml-dashboard-project" target="_blank">ML Dashboard Project</a></h3>
+        <p>Designed a machine learning project dashboard integrating Python analyses and interactive plots.</p>
+      </div>
+    </div>
+  </section>
 </main>
+
 </body>
 </html>
