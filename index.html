@@ -3,106 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Antile Chenai Kaba - Portfolio</title>
+<title>Antile Chenai Kaba | Portfolio</title>
 <style>
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9fafb;
-    color: #1f2937;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
     margin: 0;
     padding: 0;
   }
-
   header {
-    background-color: #2563eb;
+    background-color: #1f2937;
     color: white;
-    padding: 50px 20px;
+    padding: 30px 20px;
     text-align: center;
   }
-
   header img {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #fff;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
-
   header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+    margin: 10px 0 5px;
   }
-
   header p {
-    margin: 5px 0 15px 0;
-    font-size: 1.1rem;
+    margin: 5px 0;
+    font-size: 16px;
   }
-
-  .button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #1e40af;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-
-  .button:hover {
-    background-color: #1e3a8a;
-  }
-
   main {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 30px auto;
     padding: 0 20px;
   }
-
   section {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
-
   h2 {
     color: #111827;
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 5px;
   }
-
-  p {
-    line-height: 1.6;
-  }
-
-  ul.projects {
+  ul {
     list-style: none;
     padding: 0;
   }
-
-  ul.projects li {
-    margin-bottom: 25px;
-    padding: 18px 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.2s;
+  li.project {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
   }
-
-  ul.projects li:hover {
-    transform: translateY(-3px);
-  }
-
-  ul.projects li a {
+  li.project a {
     font-weight: bold;
-    color: #1d4ed8;
+    color: #3b82f6;
     text-decoration: none;
-    font-size: 1.1rem;
   }
-
-  ul.projects li p {
-    margin: 8px 0 0 0;
-    color: #374151;
+  li.project p {
+    margin: 5px 0 0 0;
+  }
+  .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
   }
 </style>
 </head>
@@ -111,38 +80,42 @@
 <header>
   <img src="profile.jpg" alt="Antile Chenai Kaba">
   <h1>Antile Chenai Kaba</h1>
-  <p>Data & Supply Chain Analytics | Bayonne, NJ</p>
-  <a class="button" href="resume.pdf" target="_blank">View Resume</a>
+  <p><a href="https://www.linkedin.com/in/antile-kaba-61421a205" style="color:#3b82f6;">LinkedIn</a></p>
+  <a class="resume-button" href="resume.pdf" target="_blank">View Resume</a>
 </header>
 
 <main>
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a Data and Supply Chain Analytics professional with experience in ETL, data warehousing, and business analytics. 
-      I focus on delivering actionable insights, building scalable data solutions, and supporting decision-making with clear, visual storytelling.
-    </p>
-  </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul class="projects">
-      <li>
-        <a href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank">Airbnb Market Analysis</a>
-        <p>Analyzed 20,000+ Airbnb listings in NYC to identify trends in pricing, occupancy, and profitability, guiding investor decisions.</p>
-      </li>
-      <li>
-        <a href="https://github.com/Antile-Chenai/global-supply-chain-analytics" target="_blank">Global Supply Chain Analytics</a>
-        <p>Developed ETL pipelines and dashboards for supply chain data, improving reporting efficiency and enabling real-time insights for stakeholders.</p>
-      </li>
-      <li>
-        <a href="https://github.com/Antile-Chenai/knowledge-game" target="_blank">Knowledge Game</a>
-        <p>Built an interactive web-based educational game to reinforce learning, using front-end technologies and game logic for a seamless experience.</p>
-      </li>
-      <!-- Add other GitHub-hosted projects here -->
-    </ul>
-  </section>
+<section>
+  <h2>About Me</h2>
+  <p>I am a Data Analytics and Supply Chain professional with experience in ETL, data visualization, and Python-based analytics. I specialize in creating actionable insights through dashboards, exploratory data analysis, and automated workflows.</p>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <ul>
+    <!-- GitHub Public Repo -->
+    <li class="project">
+      <a href="https://github.com/Antile-Chenai/airbnb-data-analysis" target="_blank">Airbnb Data Analysis</a>
+      <p>Python analysis of 20,000+ NYC Airbnb listings to uncover pricing, occupancy, and profitability trends. Includes data cleaning, visualization with Pandas & Matplotlib, and recommendations for investors.</p>
+    </li>
+
+    <!-- Local Projects from portfolio/projects -->
+    <li class="project">
+      <a href="#">Global Supply Chain Analytics</a>
+      <p>Designed ETL pipelines and data visualizations using dbt and BigQuery to streamline supply chain reporting. Optimized workflows for better accuracy and efficiency.</p>
+    </li>
+
+    <!-- Add more local projects below in the same format -->
+    <!-- Example:
+    <li class="project">
+      <a href="#">Project Name</a>
+      <p>Project description goes here...</p>
+    </li>
+    -->
+  </ul>
+</section>
+
 </main>
-
 </body>
 </html>
