@@ -12,7 +12,7 @@
   header p { margin: 5px 0; font-size: 1.1em; }
   main { max-width: 900px; margin: 30px auto; padding: 0 20px; }
   h2 { color: #0057b7; }
-  .welcome { background-color: #e8f0fe; border-radius: 8px; padding: 20px; margin-bottom: 30px; text-align: center; }
+  .welcome { background-color: white; border-radius: 8px; padding: 20px; margin-bottom: 30px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
   .projects { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
   .project { background-color: white; border-radius: 8px; padding: 20px; width: 280px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); text-align: center; }
   .project h3 { margin-top: 0; }
@@ -36,12 +36,13 @@
 </header>
 
 <main>
-  <!-- Welcome / About Me Section -->
-  <section class="welcome">
+  <!-- Welcome/About Me Section -->
+  <div class="welcome">
     <h2>Welcome!</h2>
-    <p>Hello! I'm <strong>Antile Chenai Kaba</strong>, a data enthusiast and analytics professional passionate about transforming data into actionable insights. I work with Python, SQL, Power BI, Tableau, and machine learning to solve real-world business problems.</p>
-    <p>Feel free to explore my projects below or check out my <a href="resume.pdf" target="_blank">resume</a> to know more about my experience and skills.</p>
-  </section>
+    <p>Hello, I'm <strong>Antile Chenai Kaba</strong>, a passionate data analyst and aspiring data engineer. I specialize in leveraging Python, SQL, dbt, BigQuery, and visualization tools to extract meaningful insights from complex datasets.</p>
+    <p>Through my portfolio, you’ll find projects that highlight my skills in data analysis, machine learning, and interactive dashboards. I aim to turn raw data into actionable intelligence that drives informed decisions.</p>
+    <p>Feel free to explore my projects below or connect with me via LinkedIn or email!</p>
+  </div>
 
   <h2>Projects</h2>
   <div class="projects">
@@ -86,6 +87,7 @@
       <p>Interactive machine learning dashboard using Jupyter Notebook to showcase model results and analytics.</p>
       <a href="https://github.com/Antile-Chenai/ml-dashboard-project" target="_blank">View on GitHub</a>
     </div>
+
   </div>
 </main>
 
